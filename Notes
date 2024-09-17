@@ -1,43 +1,39 @@
 https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/bash_sg.html //Student Guide Bash
-ss64
-linuxhandbook.com
-regex101
-ls -1 (displays 1 thing in a list)
-cd .. (relative path to go back to previous dir)
+Resources ss64, linuxhandbook.com, regex101
+ls -1 (-lisa) (displays 1 thing in a list)
 touch -t (specifies time to chnge timestamp on file yyyymmddhhmm.ss)
-umask (default perms)
+umask (discover default perms)
 chmod 777 (iot run bash scripts) (chmod +x?)
 bash scripts ext. are .sh
 rm to remove file -r for recursive -f forces remove
 rmdir to remove dir -p will also kill parent dir
 pwd (print working dir)
-ls ~/*.log
+ls ~/*.log (list files w/ .log)
 cp source dest
 mv source dest (used to rename or move files)
+find [directory to search] [options] [expression
 /etc/passwd (need to know and fields)
 cat more less (remember less is more) ent is 1 line, space is 1 page
 find -iname (case insens)
 find -inum # (inode #)
 find -size x (size of file)
+find -empty 
 find -size +x -x
-find -gid x find uid x
-find -group name find -user
+find -gid x or find uid x
+find -group name or find -user
 find / -maxdepth x (specifies how many dirs to search)
-find /home/student *.txt -maxdepth 1
+find /home/student *.txt -maxdepth 1 (example)
 find / -type d (dir) find / -type f (file)
 find -name \*.txt
 find /var/log/ -iname *.log -exec ls -al {} 2>/dev/null \;
 find /var/log/ -iname *.log -exec ls -al {} 2>/dev/null +
 find -path
-find -printf %i or %f
+find -printf %i (inode #) or %f (filename) (have used in class as find / -inum x -printf "%f\n")
 sudo !! (runs previous command as root)
-find -name *.txt
 find -atime/ctime/mtime -x (= days) find -amin/cmin/mmin -x (= mins) (a = accessed m = mod c = changed)
 grep -c (counts  matches)
 grep -v (shows everything that doesnt match)
 grep -E or egrep (regex)
 grep -i (case insens) 
 grep -n (line numbers)
-mkdir ~/bash/day1/11{23,34,45,56} (brace expansion (makes a lor of dirs))
-find [directory to search] [options] [expression
-find / -inum x -printf "%f\n"
+mkdir ~/bash/day1/11{23,34,45,56} (brace expansion (makes a lor of dirs)) (another example mkdir /root/11{1..5}.txt /root/11{6..9}~.txt)
