@@ -1,5 +1,6 @@
 https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/bash_sg.html //Student Guide Bash
-Resources ss64, linuxhandbook.com, regex101
+10.50.40.84 (ctfd base challenges)
+Resources ss64, linuxhandbook.com, regex101, unix.stackexchange.com, baeldung.com/linux/bash-single-vs-double-brackets (for single &| double quotes), phoenixnap.com/kb/bash-printf (printf help), 
 ls -1 (-lisa) (displays 1 thing in a list)
 touch -t (specifies time to chnge timestamp on file yyyymmddhhmm.ss)
 umask (discover default perms)
@@ -37,3 +38,25 @@ grep -E or egrep (regex)
 grep -i (case insens) 
 grep -n (line numbers)
 mkdir ~/bash/day1/11{23,34,45,56} (brace expansion (makes a lor of dirs)) (another example mkdir /root/11{1..5}.txt /root/11{6..9}~.txt)
+
+find ~/1123/ -name \*.txt ! -name \*~* -exec cp {} ~/CUT \; (explanation {} is a place holder for the find command find came first because files had to be found iot cp must end w/ \; or +, {}buffer is a requirement thats the curly braces remember + shoots all \; is one by one)
+find /var -empty -printf "%i %f\n" (-printf think print format)
+cat fakepasswd | cut -d: -f1 (cut is to cut out or to display what -d is delimeter and has to be what fields are seperated by in file and -f1 is just field 1)
+cat fakepasswd | cut -d: -f3- (only displays that field and everything after so for this it will start at f3 onward)
+cat fakepasswd | cut -d: -f3 -s (only that field -s means strict)
+ls -l ~/CUT | cut -d" " -f9 | cut -d "." -f1- -s > $HOME/CUT/names (ls -l ~/CUT will long list said dir first pipe gets me desired field where file names and dirs are next pipe omits dirs by searching for -d "." -f1- will start at file name and display extension -s will strictly enforce -d)
+egrep -o "[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}" StoryHiddenIPs (-o only displays matches no -o will just display whole file w/ matches highlighted)
+egrep -o "[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}" StoryHiddenIPs | sort (sort is a command that organizes?)
+egrep -o "[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}\.[[:digit:]]{1,3}" StoryHiddenIPs | sort | uniq -c | sort -r (uniq command that removes repeats? -c option counts repetions sort -r is needed bc sort will sort least to most think of -r is reverse so most to least)
+awk -F: '{print $1}' fakepasswd (awk -F: is very similar to cut -d: and '{print $1}' very simialr to -f1)
+awk -F: 'BEGIN {OFS="#"} {print $1, $3}' fakepasswd (OFS="#" this makes the field seperater # {print $1, $3} prints fields 1 and 3 and will be seperated by output field sep previously stated in this case its #)
+sort -u (newer command merges sort and uniq) for older machines sort | uniq (previous sort -u) (in is numbers -r is numerically reversed(big numbers first))
+sort -t : (field seperater :)
+sort -k 1 (will sort kolumn 1)
+cat fakepasswd | sort -t: -nr -k 3 (shows everything but does sort kolumn 3 and displays file as such)
+uniq (iot use uniq stuff must be sorted uniq is always after sort)
+uniq -c (counts how many times uniq stuff appears)
+sed -e (expression for multiple sed patterns) S (substituition start pattern) g (for global (lowercase)) d (lowercase deletes whole line for every instance) $ (means end of line) 
+sed -e 's/chicken/hamburger/g' -e 's/pepperoni/sausage' pizza.txt (chicken is being replaced by hamburger in every instance as well as repalces pepp for sausage)
+sed is a stream editor tool
+
