@@ -1,6 +1,6 @@
 https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/bash_sg.html //Student Guide Bash
 10.50.40.84 (ctfd base challenges)
-Resources ss64, linuxhandbook.com, regex101, unix.stackexchange.com, baeldung.com/linux/bash-single-vs-double-brackets (for single &| double quotes), phoenixnap.com/kb/bash-printf (printf help), 
+Resources ss64, linuxhandbook.com, regex101, unix.stackexchange.com, baeldung.com/linux/bash-single-vs-double-brackets (for single &| double quotes), phoenixnap.com/kb/bash-printf (printf help), gnu.org
 ls -1 (-lisa) (displays 1 thing in a list)
 touch -t (specifies time to chnge timestamp on file yyyymmddhhmm.ss)
 umask (discover default perms)
