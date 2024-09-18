@@ -60,3 +60,29 @@ sed -e (expression for multiple sed patterns) S (substituition start pattern) g 
 sed -e 's/chicken/hamburger/g' -e 's/pepperoni/sausage' pizza.txt (chicken is being replaced by hamburger in every instance as well as repalces pepp for sausage)
 sed is a stream editor tool
 
+shebang line first line in bash script #!/bin/bash
+A=$(cat /etc/passwd)
+echo $A
+if statements must end with an fi 
+        #!/bin/bash
+        contents=$(cat simple2.txt)
+        if [[ $contents == "tacos" ]]; then
+          echo only on tuesdays
+        elif [[$contents == "costco" ]]; then
+          echo is cool but expensive
+        elif [[ 4contents == "troopstore" ]]; then
+          echo always crowded
+        else
+          echo no tax at commissary
+        fi
+
+      #!/bin/bash
+      for x in $(cat songs); do #list out the songs in the song file
+        echo $x
+      done
+command substitution
+  A=$(cat /etc/passwd) (for command sub $ is after = and command is parenthesis)
+tar -czf
+rev command just reverses output u can rev | <command> |rev and reverse output to be backwards last/second rev fixes output
+     ex)  find /$HOME -name "*.bin" -type f 2>/dev/null | rev | cut -d/ -f2- -s | rev
+
