@@ -1,6 +1,6 @@
 https://cted.cybbh.io/tech-college/pns/public/pns/latest/guides/bash_sg.html //Student Guide Bash
 10.50.40.84 (ctfd base challenges)
-Resources ss64, linuxhandbook.com, regex101, unix.stackexchange.com, baeldung.com/linux/bash-single-vs-double-brackets (for single &| double quotes), phoenixnap.com/kb/bash-printf (printf help), gnu.org
+Resources ss64, linuxhandbook.com, regex101, unix.stackexchange.com, baeldung.com/linux/bash-single-vs-double-brackets (for single &| double quotes), phoenixnap.com/kb/bash-printf (printf help),linuxhandbook.com/find-exec-command/,gnu.org
 ls -1 (-lisa) (displays 1 thing in a list)
 touch -t (specifies time to chnge timestamp on file yyyymmddhhmm.ss)
 umask (discover default perms)
@@ -87,3 +87,5 @@ tar -czf
 rev command just reverses output u can rev | <command> |rev and reverse output to be backwards last/second rev fixes output
      ex)  find /$HOME -name "*.bin" -type f 2>/dev/null | rev | cut -d/ -f2- -s | rev
 
+sort -t: -k3 -n (sort the -t option is for delimeter -k is for kolumn and it will sort that file basing sorting on the specified kolumn -n is bc it was working w/ #s in this ex)
+wc -l (word count is a command to count words -l will make it count lines)
