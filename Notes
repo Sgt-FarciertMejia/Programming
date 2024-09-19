@@ -61,7 +61,7 @@ sed -e (expression for multiple sed patterns) S (substituition start pattern) g 
 sed -e 's/chicken/hamburger/g' -e 's/pepperoni/sausage' pizza.txt (chicken is being replaced by hamburger in every instance as well as repalces pepp for sausage)
 sed is a stream editor tool
 
-shebang line first line in bash script #!/bin/bash
+shebang line first line in bash script #!/bin/bash (for example script spaces between brackets fucken matter)
 A=$(cat /etc/passwd)
 echo $A
 if statements must end with an fi 
