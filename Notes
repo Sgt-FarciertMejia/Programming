@@ -89,3 +89,6 @@ rev command just reverses output u can rev | <command> |rev and reverse output t
 
 sort -t: -k3 -n (sort the -t option is for delimeter -k is for kolumn and it will sort that file basing sorting on the specified kolumn -n is bc it was working w/ #s in this ex)
 wc -l (word count is a command to count words -l will make it count lines)
+
+where awk is being used sed and or cut can be used however awk can be used for conditionals
+important concetps to know grep, find, -exec, 2>/dev/null, -maxdepth *, touch -t (touch -d), rm -rf, pkill (kill poc by name), tar -czf $var {} +, \; cut, sort -u or uniq, 
