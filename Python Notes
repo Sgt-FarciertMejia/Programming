@@ -34,6 +34,33 @@ Example Script to check if number is divisible by another number (to see if a nu
   9 else:#not divisible by 3 or 5
  10     print(usr)
 
+Function must be defined first then called to execute 
+def fizzbuzz():
+  code block
+fizzbuzz()
+
+while loops
+def test():
+  while True:
+    user = input("Type 'Pass', 'Break', 'Continue', or 'Return':\n")
+    if user == 'Pass':
+      pass
+      print('This is pass.')
+    elif user == 'Break':
+      break
+      print('This is Break.')
+    elif user == 'Continue':
+      continue
+      print('This is Continue.')
+    elif user == 'Return':
+      return
+      prinit('This is return')
+    else:
+      print('Please choose a valid option.')
+test():
+    
+print('Yes ths is true')
+
 
 
 
