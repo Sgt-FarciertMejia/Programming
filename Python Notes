@@ -1,0 +1,25 @@
+IOT use python 3 type python3 in terminal for ver 3.6.9
+>>> is the REPL
+Character Types -Int, char, strings, floats, boolean
+Brace expansion ex. print(type(a)) - working from inside out function a is executed followed by type lastly print
+for bool while using string all strings are true except for empty string for example '' = false while ' ' = true
+type casting str(1) will make it a string instead of an int
+python automatically type casts integers and floats
+can also add strings 'Hello' + ' ' + 'World!'
+cannot add int and floats to strings however you can multiply
+difference between division / 15 / 8 = 1.875 where interger division // 15 // 8 = 1
+modulus is remainder 15 % 8 = 7
+exponents is ** 5 ** 2 = 25
+'{}{}!'.format('Hello','World') prints 'Hello World!'- this is a method function this modifies an object 
+tuple are inmutable while lists are mutable meaning it can change
+lists start and end w/ []
+tuple start and end w/ ()
+index notation is tuple or list ('example')[x]
+.append() allows you to append things to a list
+.join() can join a list together requires a string in the beginninig 
+dlist[0] = 'j' changes first element to j
+.split() will split string on the delimeter placed in parenthesis and after split a list will be returned
+''' will comment an entire section requires ''' codes at desired start and end points
+
+
+
