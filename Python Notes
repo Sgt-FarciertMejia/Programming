@@ -67,7 +67,7 @@ range(start)(stop)(step)
 len() gives us the length of something
 slicing similar to index notationn and range with the start stop step example is with the range above numbers[0::] will print start to end for numbers
 delete from a list is del list[index]
-
+for loops declare the first variable in the line and the second variable is the list or array or tuple
 
 
 
