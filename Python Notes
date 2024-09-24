@@ -60,7 +60,12 @@ def test():
 test():
 
 
-
+range(10)
+list(range(10)) creates a list with a range of 0 to 9
+range(start)(stop)(step)
+  exmaple list(range(0,10,2)) will generate a list of numbers == 0,2,4,6,8
+len() gives us the length of something
+slicing similar to index notationn and range with the start stop step example is with the range above numbers[0::] will print start to end for numbers
 
 
 
