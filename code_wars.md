@@ -59,4 +59,42 @@ def rps(p1, p2):
         answer = value1 / value2
     return answer
 
-    
+#Inverted int list
+	def invert(lst):
+	    lst1 = []
+	    for num in lst:
+	        lst1.append(num * -1)
+	    return lst1
+
+#Total amount of points for the season
+	def points(games):
+    points = 0
+    for i in games:
+        if int(i[0]) > int(i[2]):
+            points += 3
+        elif int(i[0]) < int(i[2]):
+            points += 0
+        elif int(i[0]) == int(i[2]):
+            points += 1
+    return points
+
+#Sum of an array
+	def sum_array(a):
+ 	total = 0
+    	for i in a:
+        	total += i
+    	return total
+or
+	def sum_array(a):
+  	return sum(a)
+
+#Checking for 1 number to be even and the other number be false
+	def lovefunc( flower1, flower2 ):
+    	return (flower1+flower2)%2
+or
+	def lovefunc( flower1, flower2 ):
+    		if (int(flower1)%2 == 0 or int(flower2)%2 == 0) and (int(flower1)%2 != 0 or int(flower2)%2 != 0):
+        	return True
+    	else:
+        	return False
+
