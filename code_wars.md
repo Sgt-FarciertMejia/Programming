@@ -108,3 +108,58 @@ or
         	return True
     	else:
         	return False
+
+#return words that are spaced and or double spaced in reverse as a string
+	def reverse_words(text):
+	    line = []
+	    text2 = text.split()
+	    if '  ' in text:
+	        for word in text2:
+	            line.append(word[::-1])
+	        return '  '.join(line)  
+	    else:
+	        for word in text2:
+	            line.append(word[::-1])
+	        return ' '.join(line)
+
+  #squares every number individually and concatenates it 
+  	def square_digits(num):
+    		newnum = []
+    		for digit in str(num):
+        	digit2 = int(digit) ** 2
+        	newnum.append(str(digit2))
+    	return int(''.join(newnum))
+
+  #takes numbers within a range and gets the sum
+  	def summation(num):
+    		ans = sum(list(range(num + 1)))
+    	return ans
+
+#find the smallest word in a string
+	def find_short(s):
+    		l = 99
+    		s2 = s.split()
+    		for w in s2:
+        		if len(w) < l:
+            		l = len(w)
+    			return l # l: shortest word length was already a declared variable
+
+#return the reverse of a singular word
+	def solution(string):
+   		 return string [::-1]
+
+#Typecast a number into a string
+	def number_to_string(num):
+    		return str(num)	
+
+#print max and min of a list in strings 
+	def high_and_low(numbers):
+	    lst = []
+	    for num in numbers.split():
+	        lst.append(int(num))
+	    lst= [str(max(lst)), str(min(lst))]
+	    #print(lst)
+	    return ' '.join(lst)
+
+
+     
