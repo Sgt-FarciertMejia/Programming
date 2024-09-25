@@ -69,7 +69,65 @@ slicing similar to index notationn and range with the start stop step example is
 delete from a list is del list[index]
 for loops declare the first variable in the line and the second variable is the list or array or tuple
 
+For ALL These examples fp CAN BE ANYTHING
+Way to open files without having to manually close them
+with open("test.txt") as fp:
+    pass
+Way to open and write to a file
+with open('test.txt', 'w') as fp:
+    fp.write('First line\n')
+    lines = ['Second line\n', 'Third line\n', 'Fourth line\n', 'Last line\n']
+    fp.writelines(lines)
+Way to read a file
+with open('test.txt') as fp:
+    fp.read()
+Will read files up to 5 characters
+with open('test.txt') as fp:
+    fp.read(5)
+fp.readline will read a line in a file and fp.readlines will read multiple lines in a file
+with open('test.txt') as fp:
+    fp.readline()
+    fp.readlines()
+Will read all lines in a file and if something is pasted in the '' can append to end of everyline
+with open('test.txt') as fp:
+    for line in fp:
+        print(line, end='')
 
+FILE IO EXAMPLES
+#finds total number of chars in a file
+with open("travel_plans.txt") as fp:
+    num = len(fp.read())
+#finds total number of words in a file
+with open('emotion_words.txt') as fp:
+    num_words = len(fp.read().split())
+#finds total number of lines from a file
+with open('school_prompt.txt') as fp:
+    num_lines = len(fp.readlines())
+#assigns the first 30 chars to string from a file
+with open('school_prompt.txt') as fp:
+    beginning_chars = str(fp.read(30))
+#assigns every third word of a file to an empty list
+three = []
+with open('school_prompt.txt') as fp:
+    for line in fp:
+        three.append(line.split()[2])
+#assings every first word of a line to an empty list
+emotions = []
+with open('emotion_words.txt') as fp:
+    for line in fp:
+        emotions.append(line.split()[0])
+#assigns every word in a file that begins with the letter p to a list
+p_words = []
+with open('school_prompt.txt') as fp:
+    for line in fp:
+        for word in line.split():
+            if 'p' in word:
+                p_words.append(word)
+
+MISC FUNCTIONS
+ord()  turns a character as a strint to a number     chr() turns is to a character string to a number
+.isnumeric()  can eval strings and returns a boolean if numbers are found does not work on ints
+sum()    does math addition
 
 
 
