@@ -287,11 +287,11 @@ def q9(miltime):
     1600-2059 "Good Evening"
     2100-0259 "Good Night"
     '''
-    if 300 < miltime < 1159:
+    if 300 <= miltime <= 1159:
         return 'Good Morning'
-    elif 1200 < miltime < 1559:
+    elif 1200 <= miltime <= 1559:
         return 'Good Afternoon'
-    elif 1600 < miltime < 2059:
+    elif 1600 <= miltime <= 2059:
         return 'Good Evening'
     else:
         return 'Good Night'
