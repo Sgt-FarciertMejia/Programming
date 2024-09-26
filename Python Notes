@@ -129,6 +129,19 @@ ord()  turns a character as a strint to a number     chr() turns is to a charact
 .isnumeric()  can eval strings and returns a boolean if numbers are found does not work on ints
 sum()    does math addition
 
+#Day2 fizzbuzz example
+#usr/bin/env python3
+def fizzbuzz():
+    usr = int(input('Type a number:\n'))
+    if usr % 3 == 0 and usr % 5  == 0:#divisible by 3 and 5
+        print('fizzbuzz')
+    elif usr % 5 == 0:#divisible by 5
+        print('buzz')
+    elif usr % 3 == 0:#divisible by 3
+        print('fizz')
+    else:#not divisible by 3 or 5
+        print(usr)
+fizzbuzz() 
 
 
 
