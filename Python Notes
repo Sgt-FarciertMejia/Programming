@@ -273,6 +273,8 @@ def q8(filename,lst):
                 break
             else:
                 q8.write(word + '\n')
+                or
+                q8.write('{}\n'.format(word))
     pass
 
 def q9(miltime):
